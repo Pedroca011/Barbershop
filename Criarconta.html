@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="BarberShopLogo.svg">
+    <title>Criar conta</title>
+    <script src="https://kit.fontawesome.com/65210ff748.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="Criarconta.css">
+</head>
+<body>
+    <p class="Logo">BarberShop</p>
+    <section>
+        <div class="PosiCriarconta">
+            <p class="txtCriarconta">Criar conta</p>
+            <div class="containerForms">
+                    <form  id="signup-form" class="forms">
+
+                        <div class="group">
+                            <input required type="text" class="input">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="lblName">Nome</label>
+                          </div>
+
+                          <div class="groupEmailNumero">
+                            <div class="groupEmail">
+                              <input required type="email" id="email" name="email" class="inputEmail">
+                              <span class="highlightEmail"></span>
+                              <span class="barEmail"></span>
+                              <label class="lblEmail">Email</label>
+                            </div>
+
+                          <div class="groupNumero">
+                            <input required type="tel" class="inputNumero">
+                            <span class="highlightNumero"></span>
+                            <span class="barNumero"></span>
+                            <label class="lblNumero">Número</label>
+                          </div>
+                          
+                        </div>
+                        <div class="groupSenhaRepSenha">
+                            <div class="groupSenha">
+                              <input required type="password" id="password" name="password" class="inputSenha">
+                              <span class="highlightSenha"></span>
+                              <span class="barSenha"></span>
+                              <label for="password" class="lblSenha">Senha</label>
+                            </div>
+  
+                            <div class="Repsenha">
+                              <input required type="password" class="inputRepSenha">
+                              <span class="highlightRepSenha"></span>
+                              <span class="barRepSenha"></span>
+                              <label class="lblrepSenha">Repetir senha</label>
+                            </div>
+                          </div>
+                          <div class="groupPolitica">
+                                <input type="checkbox" class="InputCheckbox" required>
+                                <p class="txtPolitica">Li e aceito todos os<b>termos</b> e <b>políticas</b>  do site.</p>
+                          </div>
+                          <div class="PosiBtnCadastrar">
+                            <button type="button" id="btnCadastrar" class="btnCadastrar">Cadastrar</button>
+                          </div>
+                          <div class="PosiEntrarcom">
+                          <hr> <p class="txtEntrarcom">Entrar com</p> <hr>
+                        </div>
+                        <div class="groupGoogle">
+                          <div class="PosiGoogle">
+                            <img class="IconGoogle" src="IconGoogle.svg">
+                            <p class="txtContaGoogle">Conta Google</p>
+                          </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

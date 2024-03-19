@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="BarberShopLogo.png">
+    <title>Página Inicial</title>
+    <script src="https://kit.fontawesome.com/65210ff748.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Home.css">
+    <script src="Home.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PoetsenOne:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="BarberShopLogo.png" class="img" draggable="false" alt="Logo">
+        <div>
+        <p class="wellington">Wellington Corts</p>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li onclick="scrollToSection('section-sobre')">Sobre nós</li>
+                    <li onclick="scrollToSection('servico')">Serviços</li>
+                    <li onclick="scrollToSection('agende')">Agendamento</li>
+                    <li onclick="scrollToSection('contato')">Cotato</li>
+                </ul>
+            </nav>
+        </div>
+            <button class="header-signin-btn" id="btnAbrirMenu">Entrar</button>
+            
+    </header>
+    <div class="Banner">
+        <p class="txtBanner1">Estilo que faz história,</p>
+        <p class="txtBanner2">venha tranformar a sua!</p> 
+        <button class="banner-button">Agendar Horário</button>
+        <img src="BannerPrincinpal.svg" class="banner-image" draggable="false"> 
+        <img src="BarberShopLogo.png" class="banner-logo" draggable="false">       
+    </div>
+
+        <section class="section-sobre" id="section-sobre">   
+            <div class="section-sobre-container-text">         
+                <h1><span class="sections-main-text">Sobre Nós</span></h1>
+                    <p class="section-sobre-text2">Na <b>Wellignton Corts</b>, acreditamos que cada corte de cabelo e barba é uma oportunidade de criar algo especial. Com uma abordagem fresca e contemporânea, combinamos as técnicas clássicas que aprendi durante meu treinamento com um toque moderno e personalizado. Cada cliente é único, e é essa individualidade que nos inspira a oferecer serviços exclusivos e sob medida.
+                    </p>
+                    <p class="section-sobre-text3">
+                    Nosso espaço foi cuidadosamente projetado para proporcionar uma atmosfera acolhedora e descontraída. Queremos que você se sinta à vontade e confortável enquanto confia em nós para aprimorar o seu estilo. Além de oferecer cortes impecáveis, estamos comprometidos em criar uma experiência completa de barbearia, onde você não apenas sai com um visual renovado, mas também com a confiança renovada.
+                    </p>
+            </div>
+            <div class="section-sobre-container-img">
+                <img class="section-sobre-img" src="BarbeariaFrente.svg" alt="Barbearia de Frente">
+                <img class="section-sobre-img2" src="Salao.svg" alt="Salão">
+            </div>
+        </section>
+            <section>
+                <!-- Menu -->
+                <div class="overlay" id="overlay"></div>
+                <div class="menu" id="menu">
+                    <div class="containerLogoVoltar">
+                    <div class="containerVoltar">
+                    <i class="fa-solid fa-arrow-left Voltar" id="btnFecharMenu"></i>
+                </div>
+                <div class="containerBarbeShop">
+                    <p class="txtBarberShop">BarberShop</p>
+                </div>
+            </div>
+                <div class="containertxtEntreConta">
+                    <p class="text">Entre em sua conta!</p>
+                </div>
+                <form>
+                    <div class="containerElementosForms">
+                    <div class="group">
+                        <input required="" type="email" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                      </div>
+                      <div class="group">
+                        <input required="" type="password" id="senha" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Senha</label>
+                        <i class="fa-solid fa-eye IconEye" id="eyeShow"></i>
+                        <i class="fa-solid fa-eye-slash IconEye" id="eyeHide"></i>
+                        <p class="LinkTxtCriaConta"><a href="Criarconta.html">Criar conta</a></p>
+                      </div>
+                   
+                    <div class="containerBtnEntrar">
+                    <button class="btnEntrar">Entrar</button>
+                </div>
+                <div class="containerGoogle">
+                <div class="containerBtnGoogle">
+                    <i class="fa-brands fa-google IconGoogle"></i>
+                    <p class="txtEntrarGoogle">Entrar com google</p>
+                </div>
+            </div>
+                </form>
+            </div>
+            </section>
+        <section class="section-serviços" id="servico">
+            <div class="section-serviços-main-img">
+                <img class="section-serviços-img" src="ServiçosLogo.svg" draggable="false" alt="Serviços">
+            </div>
+            <div class="section-serviços-posicon">
+                <img src="iconhair.svg" class="section-serviços-img2" draggable="false">
+                <p class="section-serviços-tbl-text">Corte-Cabelo</p>
+                <hr>
+                <p class="section-serviços-tbl-text">40 min R$25,00</p>    
+            </div>
+            <div class="section-serviços-posicon">
+                <img src="iconbeard.svg" class="section-serviços-img2" draggable="false">
+                <p class="section-serviços-tb2-text">Barba</p>
+                <hr class="section-serviços-hr2-text">
+                <p class="section-serviços-tb2-text">30min R$25,00</p>
+            </div>
+            <div class="section-serviços-posicon">
+                <img src="iconshadow.svg" class="section-serviços-img2" draggable="false">
+                <p class="section-serviços-tb3-text"> Sobramcelha</p>
+                <hr>
+                    <p class="section-serviços-tb3-text">15 min R$15,00</p>        
+            </div>
+            <div class="section-serviços-posicon">
+                <img src="iconhydration.svg" class="section-serviços-img2" draggable="false">
+                <p class="section-serviços-tb4-text" >Hidratação</p>
+                <hr>
+                <p class="section-serviços-tb4-text">40 min R$25,00</p>
+            </div>
+            <div  class="section-serviços-posicon">
+                <p class="section-serviços-tb5-text">Nevou</p>
+                <hr class="linha">
+                <p class="section-serviços-tb5-text">60min R$85,00</p>
+            </div>
+            <div  class="section-serviços-posicon">
+                <p class="section-serviços-tb5-text">Luzes</p>
+                <hr class="linha">
+                <p class="section-serviços-tb5-text">60min R$70,00</p>
+            </div>
+        </section>
+
+        </div>
+        <section class="section-agende" id="agende">
+            <div class="section-agende-container-img">
+            <img class="section-agende-main-img" src="Agendehorario.svg" alt="Agende seu horário">
+            </div>
+            <div class="section-agende-posiselecionar"> 
+                <p class="section-agende-txtselecionar">Selecionar serviço:</p>
+                    <button id="btnAbrirContainerServico" class="section-agende-btnselecionar">Selecionar</button>
+            </div>
+            <div class="section-agende-posiselecionar">
+                <p class="section-agende-txthorario">Selecionar horário:</p>
+                    <button id="btnAbrirContainerHorario" class="section-agende-btnselecionar">Selecionar</button>
+            </div>
+            <div class="section-agende-posi-img">
+                <img class="section-agende-img" src="BarberAgende.svg" alt="Agende seu horário">
+            </div>
+        </section>
+       
+        <div class="overlayHorario" id="overlayHorario"></div>
+        <div class="container-Horario" id="Horario">
+            <div class="container-Cabecalho">
+                <div class="container-Icon">
+                    <i class="fa-solid fa-arrow-left Voltar"id="btnFecharContainerHorario"></i>
+                </div>
+                <div class="container-Logo">
+                    <p class="horario-logo">BarberShop</p>
+                    <p class="text-data-hora">Selecionar data/hora</p>
+                </div>
+            </div>
+
+            <div id="calendar-container">
+                <div class="Posicao-mes">
+                    <div class="bordado">
+                        <i class="fa-solid fa-chevron-left arrow" onclick="prevMonth()"></i>
+                        <span id="current-month"></span>
+                        <i class="fa-solid fa-chevron-right arrow" onclick="nextMonth()"></i>
+                    </div>
+                </div>
+                <table class="calendar" id="calendar">
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sab</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="container-Hr-disponivel">
+                <div class="text-Hr-disponivel">
+                <p class="Hr-disponivel">Horários disponíveis</p>
+            </div>
+            <div class="horarios-disponiveis" id="horarios-disponiveis">
+                <div class="horario" onclick="selectHorario('09:00')">9:00</div>
+                <div class="horario" onclick="selectHorario('09:40')">9:40</div>
+                <div class="horario" onclick="selectHorario('10:30')">10:30</div>
+                <div class="horario" onclick="selectHorario('11:10')">11:10</div>
+                <div class="horario" onclick="selectHorario('11:50')">11:50</div>
+                <div class="horario" onclick="selectHorario('12:30')">12:30</div>
+                <div class="horario" onclick="selectHorario('13:10')">13:10</div>
+                <div class="horario" onclick="selectHorario('13:50')">13:50</div>
+                <div class="horario" onclick="selectHorario('14:30')">14:30</div>
+                <div class="horario" onclick="selectHorario('15:10')">15:10</div>
+                <div class="horario" onclick="selectHorario('15:30')">15:30</div>
+                <div class="horario" onclick="selectHorario('16:10')">16:10</div>
+                <div class="horario" onclick="selectHorario('16:30')">16:30</div>
+                <div class="horario" onclick="selectHorario('09:00')">17:10</div>
+            </div>
+            </div>
+          <div class="button-confirmar-hr">
+            <button class="BtnConfirmar">Confirmar</button>
+          </div>
+        </div>
+        <script>
+         // Variáveis para armazenar a data selecionada e o horário selecionado
+    let selectedDate = null;
+    let selectedHorario = null;
+
+    // JavaScript para criar e atualizar o calendário
+    const calendarBody = document.getElementById('calendar-body');
+    const currentMonthElement = document.getElementById('current-month');
+    let currentDate = new Date();
+    let currentYear = currentDate.getFullYear();
+    let currentMonth = currentDate.getMonth();
+
+    function createCalendar(year, month) {
+        calendarBody.innerHTML = '';
+
+        const startDate = new Date(year, month, 1);
+        const endDate = new Date(year, month + 1, 0);
+        const numDays = endDate.getDate();
+
+        currentMonthElement.textContent = startDate.toLocaleString('default', { month: 'long', year: 'numeric' });
+
+        let currentRow;
+        let currentDay = 1;
+        let dayOfWeek = startDate.getDay();
+
+        // Cria as linhas e células da tabela
+        for (let i = 0; i < 6; i++) {
+            currentRow = calendarBody.insertRow();
+            
+            // Cria as células para os dias da semana
+            for (let j = 0; j < 7; j++) {
+                const cell = currentRow.insertCell();
+                
+                if (i === 0 && j < dayOfWeek) {
+                    // Deixe as células em branco até o primeiro dia do mês
+                    continue;
+                }
+
+                if (currentDay > numDays) {
+                    // Quando todos os dias do mês foram adicionados, pare
+                    break;
+                }
+
+                const cellContent = document.createElement('div');
+                cellContent.textContent = currentDay;
+                cellContent.classList.add('cell-content');
+
+                cell.appendChild(cellContent);
+
+                cell.addEventListener('click', function() {
+                    // Adicione aqui o código para lidar com a seleção do dia
+                    selectedDate = new Date(year, month, currentDay);
+                    alert('Você selecionou o dia ' + selectedDate.toLocaleDateString());
+                });
+
+                currentDay++;
+            }
+
+            // Se todos os dias do mês já foram adicionados, pare
+            if (currentDay > numDays) {
+                break;
+            }
+        }
+    }
+
+    function prevMonth() {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentYear--;
+            currentMonth = 11;
+        }
+        createCalendar(currentYear, currentMonth);
+    }
+
+    function nextMonth() {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentYear++;
+            currentMonth = 0;
+        }
+        createCalendar(currentYear, currentMonth);
+    }
+
+    // Função para selecionar um horário
+    function selectHorario(horario) {
+        selectedHorario = horario;
+        alert('Você selecionou o horário ' + selectedHorario);
+        // Aqui você pode adicionar a lógica para agendar o horário junto com a data selecionada
+    }
+    
+    // Chamando a função para criar o calendário atual
+    createCalendar(currentYear, currentMonth);
+        </script>
+
+        <div class="overlayServicos" id="overlayServicos"></div>
+        <div class="container-Servico" id="Servicos">
+            <div class="container-Cabecalho">
+                <div class="container-Icon">
+                    <i class="fa-solid fa-arrow-left Voltar"id="btnFecharContainerServicos"></i>
+                </div>
+                <div class="container-Logo">
+                    <p>BarberShop</p>
+                </div>
+            </div>
+           <table class="table-container">
+            <tbody>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox">
+                        <span>Corte</span>
+                        <span>R$30,00</span>
+                        <div class="container-Tempo">
+                        <span>40min</span>
+                    </div>
+                        <div class="container-Icone">
+                        <i class="fa-solid fa-chevron-right IconSeta"></i>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox">
+                        <span>Barba</span>
+                        <span>R$25,00</span>
+                        <div class="container-Tempo">
+                        <span>40min</span>
+                    </div>
+                        <div class="container-Icone">
+                        <i class="fa-solid fa-chevron-right IconSeta"></i>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox">
+                        <span>Sombrancelha</span>
+                        <span>R$15,00</span>
+                        <div class="container-Tempo">
+                        <span>10min</span>
+                    </div>
+                        <div class="container-Icone">
+                        <i class="fa-solid fa-chevron-right IconSeta"></i>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox">
+                        <span>Hidratação</span>
+                        <span>R$25,00</span>
+                        <div class="container-Tempo">
+                        <span>40min</span>
+                    </div>
+                        <div class="container-Icone">
+                        <i class="fa-solid fa-chevron-right IconSeta"></i>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox">
+                        <span>Nevou</span>
+                        <span>R$85,00</span>
+                        <div class="container-Tempo">
+                        <span>40min</span>
+                    </div>
+                        <div class="container-Icone">
+                        <i class="fa-solid fa-chevron-right IconSeta"></i>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="checkbox">
+                        <input type="checkbox">
+                        <span>Rreflexo</span>
+                        <span>R$70,00</span>
+                        <div class="container-Tempo">
+                        <span>40min</span>
+                    </div>
+                        <div class="container-Icone">
+                        <i class="fa-solid fa-chevron-right IconSeta"></i>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="container-BtnConfirmar">
+                            <button class="BtnConfirmar">Confirmar</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>           
+           </table>
+        </div>           
+
+        <section class="section-contato" id="contato">
+            <h1><span class="sections-main-text">Contato </span></h1>
+                    <div class="container-contato-imgContato">
+                        <div class="container-contato">
+                            <div class="group-contato">
+                            <div class="container-nome-numero">
+                            <div class="group-name-numero">
+                                <input required="" type="text" class="input-nome-numero">
+                                <span class="highlight-nome-numero"></span>
+                                <span class="bar-nome-numero"></span>
+                                <label class="nome-numero">Nome</label>
+                              </div>
+                              <div class="group-name-numero">
+                                <input required="" type="tel" class="input-nome-numero">
+                                <span class="highlight-nome-numero"></span>
+                                <span class="bar-nome-numero"></span>
+                                <label class="nome-numero">Número</label>
+                              </div>
+                            </div>
+                            <div class="container-email">
+                                <div class="group-email">
+                                    <input required="" type="email" class="input-email">
+                                    <span class="highlight-email"></span>
+                                    <span class="bar-email"></span>
+                                    <label class="email">Email</label>
+                                  </div>
+                            </div>
+                            <div class="container-email">
+                                <div class="group-email">
+                                    <input required="" type="text" class="input-email">
+                                    <span class="highlight-email"></span>
+                                    <span class="bar-email"></span>
+                                    <label class="email">Assunto</label>
+                                  </div>
+                            </div>
+                            <div class="container-email">
+                                <div class="group-email">
+                                    <input required="" type="text" class="input-email">
+                                    <span class="highlight-email"></span>
+                                    <span class="bar-email"></span>
+                                    <label class="email">Mensagem</label>
+                                  </div>
+                            </div>
+                            <div class="container-Button-enviar">
+                                <button class="Button-Enviar"><span>Enviar</span></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                        <div class="img-contato">
+                            <img src="imgcontato.svg">
+                        </div>
+                </div>
+        </section>
+    <footer>
+        <div class="footer-container-logo">
+            <img class="footer-logo-img" src="BarberShopLogo.png" draggable="false" alt="Logo">
+        </div>
+        <div class="footer-container-direitos">
+            <P class="footer-direitos-text">Wellinton Corts</P>
+            <p class="footer-direitos-text2">Wellignton Corts 2023. Todos os direitos reservados</p>
+        </div>
+        <div class="container-IconesRodape">
+        <div class="footer-container-rodape">
+            <i class="fa-brands fa-instagram iconinsta"></i>
+            <i class="fa-brands fa-whatsapp iconinsta"></i>
+            <i class="fa-solid fa-envelope iconinsta"></i>
+            <i class="fa-solid fa-location-dot iconinsta"></i>
+        </div>
+        <div class="footer-container-rodape-text">
+            <p>@Welligton.Corts_</p>
+            <p>11 98740-7455</p>
+            <p>welligtonCorts@gmail.com</p>
+            <p>Endereço</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
