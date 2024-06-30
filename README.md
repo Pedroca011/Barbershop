@@ -17,3 +17,4 @@
 </p><br>
 <p>JavaScript uma linguagem Orientada a Objeto, foi utilizada para fazer as funcionalidades de algumas partes do projeto, Html uma linguagem de marcação foi o resposável por fazer toda a estrutura do site. E por
 fim foi utiliozado o Css para fazer a estilização do site e deixá-lo responsivo.</p>
+<h1><strong>Design do projeto</strong></h1>
